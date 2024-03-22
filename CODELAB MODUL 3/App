@@ -1,0 +1,29 @@
+public class App {
+   public static void main(String[] args) {
+      // Membuat objek Tabung
+      Tabung tabung = new Tabung("Tabung");
+
+      // Memanggil metode inputNilai untuk Tabung
+      tabung.inputNilai();
+
+      // Menghitung dan menampilkan luas permukaan Tabung
+      tabung.luasPermukaan();
+
+      // Menghitung dan menampilkan volume Tabung
+      tabung.volume();
+
+      System.out.println();
+
+      // Membuat objek Kubus
+      Kubus kubus = new Kubus("Kubus");
+
+      // Memanggil metode input untuk Kubus
+      kubus.input();
+
+      // Menghitung dan menampilkan luas permukaan Kubus
+      kubus.luasPermukaan();
+
+      // Menghitung dan menampilkan volume Kubus
+      kubus.volume();
+   }
+}

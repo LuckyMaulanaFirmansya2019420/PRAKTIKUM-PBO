@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Tabung extends BangunRuang {
+   private double jari_jari;
+   private double tinggi;
+
+   public Tabung(String name) {
+      super(name);
+      this.scanner = new Scanner(System.in);
+   }
+
+   public void inputNilai() {
+      System.out.print("Masukkan jari-jari: ");
+      this.jari_jari = scanner.nextDouble();
+      System.out.print("Masukkan tinggi: ");
+      this.tinggi = scanner.nextDouble();
+   }
+
+   public void luasPermukaan() {
+      double luas = 2 * Math.PI * jari_jari * (jari_jari + tinggi);
+      System.out.println("Luas Permukaan Tabung: " + luas);
+   }
+
+   public void volume() {
+      double volume = Math.PI * jari_jari * jari_jari * tinggi;
+      System.out.println("Volume Tabung: " + volume);
+   }
+}
